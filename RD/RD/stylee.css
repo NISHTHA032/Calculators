@@ -1,0 +1,80 @@
+.form-range{width: 70%;}
+.calculator{
+    background-color: #16213D;
+    padding:20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #FFF;
+font-size: 18px;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+font-family: "Khand", sans-serif;
+}
+.form-label {
+color: #FFF;
+font-size: 18px;
+}
+/* .part1{    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;} */
+.results{background-color: #141C33;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}
+/* .question{background-color: #16213D; border-bottom-right-radius: 0px!important;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;} */
+input[type="text" i] {border-radius: 4.258px;
+background: #C99D3E;
+color: #fff;
+border: 1px solid transparent !important;}
+.buttoncalc{    font-family: "Brandon Text", Sans-serif;
+font-weight: bold;
+font-size: 14px;
+color: #C99D3E;
+background-color: transparent;
+padding: 10px 25px;
+text-decoration: none;
+display: inline-block;
+border: 1px solid #C99D3E;
+text-transform: uppercase;
+height: 40px;
+letter-spacing: 3.9px;}
+.buttoncalc:hover{color: #FFF;
+    border: 1px solid #FFF;
+}
+.form-control {
+    color: #fff;
+border: none;
+    background-color: #16213D;
+}
+        #interestRate,#tenure{
+cursor: pointer;
+-webkit-appearance: none;
+background-color: none;
+border-radius: 10px;
+width: 73%;
+height: 5px;
+&::-webkit-interestRate-runnable-track {
+    width: 300px;
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+}
+&::-webkit-interestRate-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #D0D0D0;
+    box-shadow:  inset 2px 2px 4px #A3A3A3,
+        inset -2px -2px 4px #E1E1E1,
+        4px 4px 8px #479BCC;
+    margin-top: -5px;
+}
+&:focus {
+    outline: none;
+}
+&::-moz-focus-outer {
+border: 0;
+}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Employment Tax Calculator</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container-wrapper">
+    <div class="container" style="margin-top: 20px;" id="home">
+      <h1>Self-Employment Tax</h1>
+      <div class="input-group">
+        <label for="income">Your self-employment Net income($):</label><br>
+        <input type="number" id="income" placeholder="Enter self-employment net income" value="50000">
+      </div>
+      <div class="input-group">
+        <label for="paid_income">Your Employer Paid Income($):</label><br>
+        <input type="number" id="paid_income" placeholder="Enter self-employment net income" value="1000">
+      </div> 
+      <button onclick="calculateTax()" id="button">Calculate</button>
+    </div>
+
+
+
+
+    <div class="container" style="margin-top: 20px;" id="summary">
+      <div>
+        <h2>Self-Employment Tax Calculation</h2>
+        <p id="socialSecurityTax">Social Security Tax: $0</p>
+        <p id="medicareTax">Medicare Tax: $0</p>
+        <p id="totalTax">Total Self-Employment Tax: $0</p>
+      </div>
+      <div id="result"></div>
+      <div>
+       <!-- <button onclick="recalculateTax()" id="rbtn">Recalculate</button>-->
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

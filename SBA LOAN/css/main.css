@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  background-color: #f4f4f4;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(8, 58, 209, 0.807);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  opacity: 1;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container.hide {
+  opacity: 0;
+  display: none;
+}
+
+.loan-calculator-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+}
+
+.loan-calculator-heading .loan-calculator {
+  color: #333;
+  display: block;
+  margin-top: -0.5rem;
+  font-size: xx-large;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width: 50%;
+  border-color: black;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: #0760c0;
+}
+
+button:hover {
+  background-color: #0760c0;
+  color: black;
+}
+
+button:active,
+button.touchstart {
+  background-color: #0760c0;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.table-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(41, 38, 233, 0.843);
+  position: relative;
+  overflow: hidden;
+ /* margin-bottom: 20px;*/
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+table {
+  width: 460px; /* Set the width to 100% */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+#summary {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(41, 38, 233, 0.843);
+  position: relative;
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  height: 25%;
+  display: none;
+}
+#table{
+  display: none;
+}
+
+p.thicker {
+  font-weight: bold;
+}
+
+.recalculate-button {
+  background-color: transparent;
+  color: black;
+  padding: 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border-color: black;
+  align-items: center;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.recalculate-button:hover {
+  background-color: #0760c0;
+  color: black;
+  
+}
+
+.recalculate-button:active,
+.recalculate-button.touchstart {
+  background-color: #0760c0;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <title>Loan Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="loan-calculator-heading">
+      <span class="loan-calculator">Loan Calculator</span>
+    </h1>
+    <form id="loanForm">
+      <label for="loanAmount">Loan Amount ($):</label>
+      <input type="number" id="loanAmount" placeholder="Enter loan amount" value="10000">
+
+      <label for="interestRate">Annual Interest Rate (%):</label>
+      <input type="number" id="interestRate" placeholder="Enter annual interest rate" value="10">
+
+      <label for="loanTerm">Loan Term (years):</label>
+      <input type="number" id="loanTerm" placeholder="Enter loan term in years" value="10">
+
+     <button id="button" type="button" onclick="calculateLoan()">Calculate</button>
+    </form>
+  </div>
+  <div class="summary-container" id="summary">
+    <h2>Summary</h2>
+    <p class="thicker" id="monthlyPayment">Monthly SBA Loan Payment: $0.00</p>
+    <p class="thicker" id="totalfinancialcost">Total Financial Cost: $0.00</p>
+    <p class="thicker" id="totalInterestPaid">Total Interest Paid: $0.00</p>
+    <p class="thicker" id="principal">Principal: $0.00</p>
+    <p class="thicker" id="totalAnnualPayments">Total Annual Payments: $0.00</p>
+  </div><br><br>
+
+  <center>
+    <div class="table-container" id="table">
+      <h2>Payment Schedule</h2>
+      <table id="paymentSchedule" width="1000">
+        <thead>
+          <tr>
+            <th>Payment</th>
+            <th>Principal</th>
+            <th>Interest</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody">
+          <!-- Amortization schedule rows will be inserted here dynamically -->
+        </tbody>
+
+      </table>
+      <button id="recalculateButton" class="recalculate-button">Recalculate</button>
+    </div>
+  </center>
+  <button id="recalculateButton" class="recalculate-button">Recalculate</button>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

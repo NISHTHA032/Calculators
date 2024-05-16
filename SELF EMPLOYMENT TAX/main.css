@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+  height: 100vh; /* Make body take up full viewport height */
+}
+
+.container-wrapper {
+  display: flex; /* Use flexbox for layout */
+}
+
+.container {
+  max-width: 500px; /* Set max-width for both containers */
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(13, 19, 187, 0.704);
+  flex: 1; /* Flex item grow to fill available space */
+}
+
+#summary {
+  max-width: 500px; /* Adjust as needed */
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(13, 19, 187, 0.704);
+  flex-shrink: 0; /* Prevent summary from shrinking */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #e3e8ed;
+  color: rgb(1, 1, 18);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(79, 11, 204, 0.844);
+}
+
+button:hover {
+  background-color: #5745a7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: right;
+  border-bottom: 1px solid; /* Added missing unit and solid keyword */
+}
+
+rbtn {
+  background-color: #e3e8ed;
+  color: rgb(1, 1, 18);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(79, 11, 204, 0.844);
+}
+
+rbtn:hover {
+  background-color: #5745a7;
+}
